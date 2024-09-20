@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Disease Prediction</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Upload an Image for Skin Disease Prediction</h1>
+    <form id="upload-form" method="POST" action="/predict" enctype="multipart/form-data">
+      <input type="file" name="file" id="imageInput" accept="image/*" required>
+      <button type="submit">Predict</button>
+    </form>
+
+    <div id="prediction-result" style="display:none;">
+      <h2>Prediction Result:</h2>
+      <p id="result"></p>
+    </div>
+  </div>
+</body>
+</html>
